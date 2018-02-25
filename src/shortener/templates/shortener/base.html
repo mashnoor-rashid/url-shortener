@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/3.3/examples/cover/cover.css" rel="stylesheet">
+    <style media="screen">
+      body{
+        background-color: #322042;
+        background-image: url("https://images2.alphacoders.com/546/546077.jpg");
+        /* background-image: url(src\shortener\templates\shortener\mountain.jpeg); */
+        background-size: cover;
+      }
+      .btn-link:hover{
+        color: #90cbfd;
+      }
+    </style>
+    <title>
+      Mash URL
+      {% block title %}
+      {% endblock %}
+    </title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover">
+            {% block content %}
+            {% endblock content %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "shortener/base.html" %}
+
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+      <h1 class="cover-heading">{{title}}</h1>
+      <p class="lead">Mash Your URLs</p>
+      <p class="lead">
+        <div class="col-sm-6 col-sm-offset-3">
+          <form method="POST" action=".">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input class="btn btn-lg btn-primary" type="submit" value="Mash URL &raquo;">
+          </form>
+        </div>
+      </p>
+{% endblock content %}
